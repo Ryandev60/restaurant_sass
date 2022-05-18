@@ -1,0 +1,192 @@
+.section4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 80px;
+  margin-bottom: 200px;
+  @media screen and (max-width:700px) {
+   margin-bottom: 800px;
+ }
+
+  h3 {
+    font-family: $font1;
+    color: $brown1;
+    text-align: center;
+    font-weight: normal;
+    font-size: 2rem;
+    line-height: 2rem;
+    margin-bottom: 2rem;
+
+    span {
+      font-family: $font2;
+      color: $white1;
+      text-transform: uppercase;
+    }
+  }
+
+  .ustensils {
+    width: 32px;
+    margin-bottom: 2rem;
+  }
+
+  .bottom {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    column-gap: 1.5rem;
+    width: 65%;
+
+    @media screen and (max-width: 700px) {
+      grid-template-columns: 1fr;
+      width: 90%;
+    }
+  }
+
+  .left-part {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 1rem;
+    @media screen and (max-width: 700px) {
+      margin-bottom: 1rem;
+    }
+
+    .card {
+      display: flex;
+      width: 100%;
+      background-color: $white1;
+    }
+    .card__left {
+      position: relative;
+      display: flex;
+
+      img {
+        width: 200px;
+        object-fit: cover;
+
+        @media screen and (max-width: 700px) {
+          width: 100px;
+        }
+      }
+
+      .date {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 60px;
+        height: 60px;
+        background-color: $black1;
+        text-align: center;
+        font-family: $font3;
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: $white1;
+
+        span {
+          font-family: $font3;
+          font-size: 0.8rem;
+          font-weight: normal;
+        }
+      }
+    }
+
+    .card__right {
+      color: $black1;
+      padding: 20px 20px 0 20px;
+      h5 {
+        font-family: $font3;
+        letter-spacing: 2px;
+        font-size: 1rem;
+        font-weight: normal;
+        margin-bottom: 20px;
+        padding-left: 10px;
+
+        @media screen and (max-width: 700px) {
+          font-size: 0.8rem;
+        }
+      }
+
+      .infos {
+        color: $grey1;
+        font-family: $font3;
+        font-size: 0.7rem;
+        letter-spacing: 1px;
+        margin-bottom: 20px;
+      }
+
+      .buy {
+        font-family: $font2;
+        text-transform: uppercase;
+
+        padding-bottom: 10px;
+      }
+    }
+  }
+
+  .right-part {
+    background: url(../assets/img/event-03.jpg) center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+
+    .card {
+      background-color: $white1;
+      height: 100%;
+      color: $black1;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      .date {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 60px;
+        height: 60px;
+        background-color: $black1;
+        text-align: center;
+        font-family: $font3;
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: $white1;
+        margin-bottom: 30px;
+
+        span {
+          font-family: $font3;
+          font-size: 0.8rem;
+          font-weight: normal;
+        }
+      }
+
+      h5 {
+        font-family: $font3;
+        letter-spacing: 2px;
+        font-size: 1rem;
+        font-weight: normal;
+        margin-bottom: 20px;
+        padding-left: 10px;
+        text-align: center;
+      }
+
+      .infos {
+        color: $grey1;
+        font-family: $font3;
+        font-size: 0.7rem;
+        letter-spacing: 1px;
+        margin-bottom: 20px;
+        margin-bottom: 80px;
+      }
+
+      .buy {
+        font-family: $font2;
+        text-transform: uppercase;
+      }
+    }
+  }
+}

@@ -1,0 +1,72 @@
+.section1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: $white1;
+
+  @media screen and (max-width: 700px) {
+    display: flex;
+  }
+
+  .left-part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 15px;
+    margin: 15px;
+    border: 1px dashed $brown1;
+
+    h3 {
+      font-family: $font1;
+      text-align: center;
+      color: $brown1;
+      font-size: 2rem;
+      font-weight: 200;
+      line-height: 2rem;
+      margin-bottom: 30px;
+
+      span {
+        font-family: $font3;
+        text-transform: uppercase;
+        color: $black2;
+        font-weight: bold;
+        font-size: 1.5rem;
+      }
+    }
+
+    .ustensils {
+      margin-bottom: 30px;
+    }
+
+    .text {
+      font-family: $font3;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .picture {
+      width: 60px;
+      border-radius: 50%;
+      margin-bottom: 15px;
+    }
+
+    .name {
+      font-family: $font3;
+      font-weight: bold;
+    }
+
+    .job {
+      font-family: $font3;
+      text-transform: uppercase;
+      color: $grey1;
+      font-size: 0.8rem;
+      font-weight: bold;
+    }
+  }
+
+  .right-part {
+    background: url(../assets/img/store-01.jpg) center/cover;
+    @media screen and (max-width: 700px) {
+      display: none;
+    }
+  }
+}

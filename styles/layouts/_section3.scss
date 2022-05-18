@@ -1,0 +1,126 @@
+.section3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .reservation {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 3fr 7fr;
+    width: 70%;
+    @media screen and (max-width: 700px) {
+      grid-template-columns: 1fr;
+      width: 100%;
+    }
+  }
+
+  .left-part {
+    background-color: $black1;
+
+    .border {
+      margin: 25px;
+      padding: 30px;
+      border: 1px dotted $grey1;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+
+      h3 {
+        font-family: $font1;
+        color: $brown1;
+        font-size: 2.5rem;
+        font-weight: normal;
+        margin-bottom: 30px;
+        text-align: center;
+        line-height: 1.5rem;
+        span {
+          font-family: $font2;
+          color: $white1;
+          text-transform: uppercase;
+          font-size: 1.5rem;
+        }
+      }
+
+      img {
+        width: 2rem;
+        margin-bottom: 30px;
+      }
+
+      .date {
+        text-transform: uppercase;
+        color: $brown1;
+        margin-bottom: 15px;
+        font-family: $font2;
+        font-size: 1.2rem;
+      }
+
+      .date__info {
+        font-family: $font3;
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 0.9rem;
+        color: $white1;
+      }
+    }
+  }
+  .right-part {
+    background-color: $white1;
+    padding: 60px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    @media screen and (max-width: 700px) {
+     padding: 30px 60px 30px 60px;
+   }
+    
+    h3 {
+      font-family: $font1;
+      color: $brown1;
+      font-size: 2.5rem;
+      font-weight: normal;
+      margin-bottom: 30px;
+      text-align: center;
+      line-height: 1.8rem;
+
+      span {
+        font-family: $font2;
+        color: $black2;
+        text-transform: uppercase;
+        font-size: 1.6rem;
+        font-weight: bold;
+      }
+    }
+
+    img {
+      margin-bottom: 30px;
+    }
+    form {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    input,
+    select {
+      margin: 10px;
+      width: 30%;
+      background: none;
+      border: none;
+      border-bottom: 1px solid $grey1;
+      padding: 10px 0 10px 0;
+      @media screen and (max-width: 700px) {
+        width: 100%;
+      }
+    }
+
+    button {
+      margin-top: 30px;
+      background-color: $black1;
+      color: $white1;
+      padding: 10px 40px;
+      font-family: $font2;
+      text-transform: uppercase;
+      letter-spacing: 0.2rem;
+      border-radius: 30px;
+      cursor: pointer;
+    }
+  }
+}
